@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let html = "<html><body><h1>My Page</h1><p>Here is some sample text.</p></body></html>"
+        
+        webView.loadHTMLString(html, baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {
